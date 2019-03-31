@@ -6,7 +6,10 @@
   "author": "jeffchoi <dev.jeffchoi@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon -e ts --exec ts-node ./src/index.ts"
+    "dev": "nodemon -e ts --exec ts-node ./src/index.ts",
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "prod": "yarn build && yarn start"
   },
   "dependencies": {
     "kcors": "^2.2.2",
