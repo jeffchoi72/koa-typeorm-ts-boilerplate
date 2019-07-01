@@ -1,5 +1,5 @@
-import * as Router from 'koa-router';
 import { Context } from 'koa';
+import * as Router from 'koa-router';
 
 import { TestCtrl } from '../controller';
 

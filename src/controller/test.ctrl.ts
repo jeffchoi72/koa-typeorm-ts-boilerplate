@@ -1,5 +1,6 @@
 import { Context } from 'koa';
 import { getCustomRepository } from 'typeorm';
+
 import { TestRepo } from '../database/repository';
 
 const getText = async (ctx: Context) => {
@@ -18,8 +19,8 @@ const getText = async (ctx: Context) => {
     code: 'SUCCESS',
     message: '성공',
     data: {
-      tests,
-    },
+      tests
+    }
   };
 };
 
